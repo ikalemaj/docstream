@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+        <title>Princeton File Share</title>
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}" type = "text/css"/>
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/static/css/headernav.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    {% block style %}
+    {% endblock %}
+
+
+    </head>
+    <div id="entire-page">
+    <body>
+        
+        <div class="nav">
+            <div class="nav-container">
+                <ul class="pull-left">
+                    <li><a href={% url 'main'%}>Home</a></li>
+                </ul>
+                <ul class="pull-right">
+                    <li><a href={% url 'feedback'%}>FeedBack</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href={%url 'list'%}>Uploads</a></li>
+                </ul>
+            </div>
+        </div>
+        {% block content %}
+       {% endblock %}
+       </body>
+       </div>
+        
+</html>

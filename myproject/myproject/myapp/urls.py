@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 from django.conf.urls import url
-from myproject.myapp.views import list
+import views
 
 urlpatterns = [
-    url(r'^list/$', list, name='list')
+    url(r'^main/$', views.main, name='main'),
+    url(r'^list/$', views.list, name='list'),
+    url(r'^feedback/$', views.feedback, name='feedback')
+
 ]

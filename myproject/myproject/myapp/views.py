@@ -35,3 +35,8 @@ def list(request):
         'myapp/list.html',
         {'documents': documents, 'form': form}
     )
+def feedback(request):
+    return render(request,'myapp/feedback.html')
+
+def main(request):
+    return render(request, 'myapp/main.html')
