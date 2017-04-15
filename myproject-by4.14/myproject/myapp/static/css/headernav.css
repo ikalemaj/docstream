@@ -1,0 +1,29 @@
+.nav a{
+	color: #000000;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 10px 20px 10px 20px;
+
+}
+
+
+.nav ul{
+	list-style-type: none;
+	text-align: center;
+	margin: 10px auto;
+}
+
+.nav li{
+	display: inline;
+}
+
+.nav-container{
+	background-color: rgba(211,211,211,0.5);
+	overflow-y: auto;
+	position: fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	width: 100%;
+}

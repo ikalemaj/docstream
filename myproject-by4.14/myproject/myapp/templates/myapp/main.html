@@ -1,0 +1,13 @@
+{% extends "myapp/headernav.html" %}
+{% block style %}
+    <link href="/static/css/main-page.css" rel="stylesheet">
+{% endblock %}
+{% block content %}
+
+<div class="main-heading">
+    <h1>Princeton Film Share</h1> 
+    <div class="main-button">
+        <a href="{%url 'list'%}" class="btn btn-primary btn-lg active" role="button">Get Started</a>
+    </div> 
+</div>
+{% endblock %}
